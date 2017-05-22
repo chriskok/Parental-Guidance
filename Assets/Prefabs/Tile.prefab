@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &183370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 416722}
+  - 212: {fileID: 21243420}
+  - 114: {fileID: 11438126}
+  - 61: {fileID: 6191876}
+  m_Layer: 0
+  m_Name: Tile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &416722
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.9330196, y: 0.9245293, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!61 &6191876
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!114 &11438126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7ed4277db93164fab4e4ca48970352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightColor: {r: 0.43382353, g: 0.953144, b: 1, a: 0.39215687}
+  oriColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+  chosenColor: {r: 1, g: 0.2794118, b: 0.2794118, a: 0.39215687}
+  flameTrap: {fileID: 113040, guid: 3c356a1fa06b93942a31958b7a45ade2, type: 2}
+  spikeTrap: {fileID: 187920, guid: 310e41a8bee9b274c9460de6a67484ce, type: 2}
+  bombTrap: {fileID: 172226, guid: 5bc13aaa5710a7542973ecaf4e58b966, type: 2}
+  used: 0
+  usedTrap: 0
+--- !u!212 &21243420
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183370}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 587af96d946870f46ba5af60d043d0e2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: highlightColor.r
+      value: 0.43382353
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: highlightColor.g
+      value: 0.953144
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: highlightColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: highlightColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flameThrower.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flameThrower.g
+      value: 0.7241379
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flameThrower.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spikes.r
+      value: 0.61764705
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spikes.g
+      value: 0.61764705
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spikes.b
+      value: 0.61764705
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spikes.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flameThrower.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: flameSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ec13d4a0ff62d5140a1dccd86627a512,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: spikeSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4f9cbe46993490344a76dc5899de62c0,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: flameTrap
+      value: 
+      objectReference: {fileID: 113040, guid: 3c356a1fa06b93942a31958b7a45ade2, type: 2}
+    - target: {fileID: 0}
+      propertyPath: spikeTrap
+      value: 
+      objectReference: {fileID: 187920, guid: 310e41a8bee9b274c9460de6a67484ce, type: 2}
+    - target: {fileID: 0}
+      propertyPath: bombTrap
+      value: 
+      objectReference: {fileID: 172226, guid: 5bc13aaa5710a7542973ecaf4e58b966, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: oriColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 587af96d946870f46ba5af60d043d0e2,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: chosenColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: chosenColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: chosenColor.g
+      value: 0.2794118
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: chosenColor.b
+      value: 0.2794118
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 183370}
+  m_IsPrefabParent: 1
