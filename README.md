@@ -1,4 +1,4 @@
-# Parental-Guidance
+# Parental Guidance
 South East Asian Game Jam 2016 entry (Theme was "Children"). 
 
 Two player action-strategy game where one player would set and activate traps while the other player would have to avoid enemies while leading them to traps. Meant to enhance family relationships through gameplay between parent and child. 
